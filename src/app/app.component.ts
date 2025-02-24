@@ -27,7 +27,7 @@ import { FormsModule } from '@angular/forms';
             <p class="titulo">{{ tituloReceta }}</p>
           </ng-container>
           <ng-template #placeholder>
-            <p>Algo no funciona</p>
+            <p><img class="cargando" src="https://th.bing.com/th/id/R.e4b6323e19e57f6761b1ce47b7d329e0?rik=D4%2b%2fTxSGPiWP2g&pid=ImgRaw&r=0" alt="cargando"></p>
           </ng-template>
         </div>
         <button class="botonAlto" (click)="siguienteReceta()">></button>
@@ -50,6 +50,11 @@ import { FormsModule } from '@angular/forms';
 
       h2{
         color: indigo;
+      }
+
+      .cargando{
+        max-width:100%;
+        max-height:10vh;
       }
 
       .dropdown {
